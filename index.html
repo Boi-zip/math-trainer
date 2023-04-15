@@ -101,6 +101,14 @@ button:hover {
 button:active{
   background: linear-gradient(#0688fa, #2dabf9);
 }
+select{
+  font-size:16px;
+      width:60px;
+      height:40px;
+}
+option{
+  font-size:16px;
+}
 
 .btnRem {
   font-size:15px;
@@ -131,8 +139,13 @@ button:active{
     <h2>Add Math Questions</h2>
     <input type="txt" name="" value="" id="in">
     <button type="button" name="button" id="Btn">Add</button>&nbsp;
-    <h2>Add multiply questions</h2>
-    <h2><input type="number" class="input-multyply" placeholder="Num" id="inp-multiply1"> * 
+    <h2>Add questions fast</h2>
+    <h2><input type="number" class="input-multyply" placeholder="Num" id="inp-multiply1"> <select name="math" id="math">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
       <input type="number" class="input-multyply" id="inp-multiply2" placeholder="Times"> 
       <button type="button" name="button" id="Btn_mt">Add</button>&nbsp;</h2>
       <br>

@@ -3,6 +3,7 @@ const inp_mt1 = document.getElementById('inp-multiply1')
 const inp_mt2 = document.getElementById('inp-multiply2')
 const btn = document.getElementById('Btn')
 const btn_mt = document.getElementById('Btn_mt')
+const mathslc = document.getElementById("math")
 
 let arrQue
 if (JSON.parse(localStorage.getItem("arrQue"))) {
@@ -88,7 +89,7 @@ btn_mt.addEventListener('click', function () {
     d1.insertBefore(li, child);
   }
   for (let i = 1; i < times; i++) {
-    const ques = `${inp_mt1.value} * ${i}`
+    const ques = `${inp_mt1.value} ${mathslc.options[mathslc.selectedIndex].text} ${i}`
     arrQue.push(ques)
     create(ques)
   }
